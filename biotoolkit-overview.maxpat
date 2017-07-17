@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 53.0, 45.0, 908.0, 450.0 ],
+		"rect" : [ 83.0, 109.0, 908.0, 450.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1096,7 +1096,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 29.0, 269.0, 92.0, 18.0 ],
+					"patching_rect" : [ 29.0, 265.0, 83.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 39.0, 207.0, 81.0, 18.0 ],
 					"text" : "biotoolkit.rr50"
