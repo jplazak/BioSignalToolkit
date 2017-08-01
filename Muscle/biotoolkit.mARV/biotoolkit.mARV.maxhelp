@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 807.0, 132.0, 487.0, 367.0 ],
+		"rect" : [ 892.0, 122.0, 487.0, 367.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,28 @@
 				"box" : 				{
 					"fontname" : "Century Gothic",
 					"fontsize" : 12.0,
-					"id" : "obj-13",
-					"maxclass" : "flonum",
+					"hidden" : 1,
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 186.5, 72.0, 32.5, 19.0 ],
+					"text" : "5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Century Gothic",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 60.0, 205.0, 50.0, 21.0 ]
+					"numoutlets" : 0,
+					"patching_rect" : [ 61.5, 126.0, 70.0, 19.0 ],
+					"text" : "Window Size"
 				}
 
 			}
@@ -45,13 +60,41 @@
 				"box" : 				{
 					"fontname" : "Century Gothic",
 					"fontsize" : 12.0,
-					"id" : "obj-11",
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 119.0, 146.0, 42.0, 19.0 ],
+					"text" : "Clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Century Gothic",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 72.0, 146.0, 47.0, 21.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Century Gothic",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
 					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 60.0, 129.0, 50.0, 21.0 ]
+					"patching_rect" : [ 30.5, 246.0, 50.0, 21.0 ]
 				}
 
 			}
@@ -80,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.0, 72.0, 32.5, 19.0 ],
+					"patching_rect" : [ 28.5, 72.0, 32.5, 19.0 ],
 					"text" : "3"
 				}
 
@@ -185,7 +228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 91.0, 43.0, 69.0, 21.0 ],
+					"patching_rect" : [ 61.5, 43.0, 69.0, 21.0 ],
 					"text" : "loadbang"
 				}
 
@@ -200,7 +243,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 72.0, 125.0, 19.0 ],
+					"patching_rect" : [ 61.5, 72.0, 125.0, 19.0 ],
 					"text" : "read emgSignal.txt"
 				}
 
@@ -214,7 +257,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 99.0, 118.0, 21.0 ],
+					"patching_rect" : [ 30.5, 99.0, 118.0, 21.0 ],
 					"text" : "biotoolkit.textData"
 				}
 
@@ -225,11 +268,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 60.0, 163.0, 122.0, 21.0 ],
-					"text" : "biotoolkit.fullRectify"
+					"patching_rect" : [ 30.5, 174.0, 102.0, 21.0 ],
+					"text" : "biotoolkit.mARV"
 				}
 
 			}
@@ -243,7 +286,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.25, 303.0, 167.0, 40.0 ],
+					"patching_rect" : [ 278.25, 317.0, 167.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 945.0, 614.0, 161.0, 40.0 ],
@@ -262,7 +305,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.25, 55.0, 431.0, 22.0 ],
-					"text" : "Outputs the fully-rectified version of a differential signal"
+					"text" : "Outputs the Moving Average Rectified Value (default window = 5)"
 				}
 
 			}
@@ -277,7 +320,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.25, 24.0, 485.0, 30.0 ],
-					"text" : "biotoolkit.fullRectify",
+					"text" : "biotoolkit.mARV",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "autohelp_top_title"
 				}
@@ -306,8 +349,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 175.0, 196.0, 239.0, 107.0 ],
-					"setminmax" : [ 0.0, 0.42 ],
+					"patching_rect" : [ 172.0, 210.0, 239.0, 107.0 ],
+					"setminmax" : [ 0.0, 0.5 ],
 					"setstyle" : 5,
 					"slidercolor" : [ 0.0, 1.0, 0.0, 1.0 ]
 				}
@@ -344,6 +387,7 @@
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 40.0, 201.0, 181.5, 201.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -353,17 +397,8 @@
 					"destination" : [ "obj-5", 3 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 310.5, 94.0, 168.5, 94.0 ],
+					"midpoints" : [ 310.5, 94.0, 139.0, 94.0 ],
 					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -372,7 +407,7 @@
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 100.5, 66.0, 87.0, 66.0, 87.0, 65.0, 310.5, 65.0 ],
+					"midpoints" : [ 71.0, 66.0, 87.0, 66.0, 87.0, 65.0, 310.5, 65.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -380,6 +415,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-2", 0 ]
@@ -415,6 +459,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -424,7 +477,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
@@ -452,6 +505,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -459,11 +521,27 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "biotoolkit.fullRectify.maxpat",
-				"bootpath" : "/Applications/Max 6.1/externals/BioSignalToolkit/alphaRelease/Muscle/biotoolkit.fullRectify",
+				"name" : "biotoolkit.mARV.maxpat",
+				"bootpath" : "/Applications/Max 6.1/externals/BioSignalToolkit/alphaRelease/Muscle/biotoolkit.mARV",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "biotoolkit.runningMean.maxpat",
+				"bootpath" : "/Applications/Max 6.1/externals/BioSignalToolkit/alphaRelease/Glue/biotoolkit.runningMean",
+				"patcherrelativepath" : "../../Glue/biotoolkit.runningMean",
 				"type" : "JSON",
 				"implicit" : 1
 			}
