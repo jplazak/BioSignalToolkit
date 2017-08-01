@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 892.0, 122.0, 487.0, 367.0 ],
+		"rect" : [ 880.0, 200.0, 487.0, 367.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -32,42 +32,13 @@
 					"fontname" : "Century Gothic",
 					"fontsize" : 14.0,
 					"frgb" : 0.0,
-					"id" : "obj-3",
+					"id" : "obj-4",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 243.0, 89.0, 41.0 ],
-					"text" : "Windowed Average"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Century Gothic",
-					"fontsize" : 12.0,
-					"hidden" : 1,
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.5, 72.0, 32.5, 19.0 ],
-					"text" : "5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Century Gothic",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-12",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 61.5, 126.0, 70.0, 19.0 ],
-					"text" : "Window Size"
+					"patching_rect" : [ 83.0, 236.0, 82.0, 41.0 ],
+					"text" : "Long-term Average"
 				}
 
 			}
@@ -80,22 +51,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 119.0, 146.0, 42.0, 19.0 ],
+					"patching_rect" : [ 113.5, 135.0, 42.0, 19.0 ],
 					"text" : "Clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Century Gothic",
-					"fontsize" : 12.0,
-					"id" : "obj-4",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 72.0, 146.0, 47.0, 21.0 ]
 				}
 
 			}
@@ -283,11 +240,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 30.5, 174.0, 102.0, 21.0 ],
-					"text" : "biotoolkit.mARV"
+					"patching_rect" : [ 30.5, 162.0, 102.0, 21.0 ],
+					"text" : "biotoolkit.ARV"
 				}
 
 			}
@@ -320,7 +277,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.25, 55.0, 431.0, 22.0 ],
-					"text" : "Outputs the Moving Average Rectified Value (default window = 5)"
+					"text" : "Outputs the  Average Rectified EMG Value (long-term average)"
 				}
 
 			}
@@ -335,7 +292,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.25, 24.0, 485.0, 30.0 ],
-					"text" : "biotoolkit.mARV",
+					"text" : "biotoolkit.ARV",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "autohelp_top_title"
 				}
@@ -438,15 +395,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -469,15 +417,6 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -520,15 +459,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 1,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -538,7 +468,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
+					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
@@ -547,16 +477,9 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "biotoolkit.mARV.maxpat",
-				"bootpath" : "/Applications/Max 6.1/externals/BioSignalToolkit/alphaRelease/Muscle/biotoolkit.mARV",
+				"name" : "biotoolkit.ARV.maxpat",
+				"bootpath" : "/Applications/Max 6.1/externals/BioSignalToolkit/alphaRelease/Muscle/biotoolkit.ARV",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "biotoolkit.runningMean.maxpat",
-				"bootpath" : "/Applications/Max 6.1/externals/BioSignalToolkit/alphaRelease/Glue/biotoolkit.runningMean",
-				"patcherrelativepath" : "../../Glue/biotoolkit.runningMean",
 				"type" : "JSON",
 				"implicit" : 1
 			}
